@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select:none;
+}
+
+body {
+    background-color: #edefee;
+}
+
+/* Header & Nav Content */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/medi-food.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 45px 8% 0 8%;
+}
+
+.logo {
+    max-width: 100%;
+    height: 70px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px 25px;
+    background-color: #495e57;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #efd000;
+    transition: .4s;
+}
+
+ .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+}
+
+ .nav-content h1{
+    color:#efd000;
+    font-size: 60px;
+    margin: 20px 20px 20px 20px ;
+
+    /* Glow animation */
+    animation: glow 2s ease-in-out infinite alternate;
+ }
+
+.lemon {
+    max-width: 100%;
+    height: 250px;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #000000;
+    }
+    to {
+      text-shadow: 0 0 30px #efd000, 0 0 10px #000000;
+    }
+}
+
+/*Main Content */
+/* About Section */
+
+.about-section {
+    width: 100%;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color:#495e57;
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-location {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.button {
+    background-color: #495e57;
+    color: #ffffff;;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    margin: 0;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+
+.button:hover {
+    color: #495e57;
+    background-color: transparent;
+    border: 3px solid;
+    transition: .4s;
+}
+
+.lemon-word {
+    color: #efd000;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color:#495e57;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 20px 10px;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    letter-spacing: 2px;
+    text-align: justify;
+    padding: 0 25px;
+    padding-bottom: 25px;
+}
+
+.about-owners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Services Section*/
+.services-section {
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 450px;
+    width: 380px;
+    padding: 20px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 5px #5d5252;
+}
+
+.card-img {
+    height: 200px;
+    max-width: 100%;
+}
+
+.card h3 {
+    color:#495e57;
+}
+
+/* Menu Section */
+.menu-section {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.menu-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 290px));
+    grid-gap: 25px;
+    padding: 50px;
+    justify-content: center;
+    margin-bottom: 75px;
+
+}
+
+.menu-container img {
+    background-position: top;
+    background-size: cover;
+    height: 250px;
+    width: 290px;
+    box-shadow: 0 0 5px #000;
+    transition: all 0.3s;
+}
+
+.menu-container img:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+  }
+
+/* Footer Content*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer h3 {
+    color: #495e57;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: 114px;
+}
+
+/* Media Queries */
