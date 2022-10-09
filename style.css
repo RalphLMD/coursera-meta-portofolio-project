@@ -11,7 +11,7 @@ body {
 
 /* Header & Nav Content */
 .hero-section {
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     background-image: url(img/medi-food.jpg);
     background-size: cover;
@@ -59,6 +59,7 @@ nav ul li a:hover {
 
  .nav-content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -192,7 +193,13 @@ nav ul li a:hover {
 }
 
 .card {
-    height: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 470px;
     width: 380px;
     padding: 20px 35px;
     background: #ffffff;
@@ -200,7 +207,6 @@ nav ul li a:hover {
     margin: 15px;
     position: relative;
     overflow: hidden;
-    text-align: center;
     box-shadow: 0 0 5px #5d5252;
 }
 
@@ -266,3 +272,15 @@ footer h3 {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 400px) {
+
+    .nav-content h1{
+        font-size: 50px;
+     }
+    
+    .lemon {
+        height: 200px;
+    }
+
+}
