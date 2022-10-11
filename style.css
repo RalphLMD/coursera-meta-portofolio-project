@@ -11,7 +11,7 @@ body {
 
 /* Header & Nav Content */
 .hero-section {
-    height: 125vh;
+    height: 150vh;
     width: 100%;
     background-image: url(img/medi-food.jpg);
     background-size: cover;
